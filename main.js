@@ -1,6 +1,14 @@
-const btn = document.getElementsByClassName("btn-el")
+const btn = document.querySelector(".btn-el")
+const display = document.querySelector("#display")
 
-function onClick() {
-  console.log("clicked");
-  
+function appendToDisplay(input) {
+  display.value += input;
+}
+
+function clearDisplay() {
+  display.value = "";
+}
+
+function calculate() {
+  display.value = eval(display.value);
 }

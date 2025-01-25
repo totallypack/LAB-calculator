@@ -4,6 +4,7 @@ body {
   color: #fff;
   width: 400px;
   height: 700px;
+  margin: 40px;
 }
 
 input {
@@ -16,6 +17,7 @@ input {
   font-size: 30px;
   font-weight: bold;
   border: none;
+  overflow: hidden;
 }
 
 .btn-container {
