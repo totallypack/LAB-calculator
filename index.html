@@ -8,39 +8,39 @@
 <body>
   <div class="btn-container">
     <div class="btn_row">
-      <Input type="text" placeholder="0"></Input>
+      <Input id="display" type="text" placeholder="0" readonly></Input>
     </div>
 
     <div class="btn_row">
-      <button class="btn-el" id="btn-el-c" onclick="onClick()">C</button>
-      <button class="btn-el" onclick="onClick()">&larr;</button>
-      <button class="btn-el" id="f-btn" onclick="onClick()">&#247;</button>
+      <button class="btn-el" id="btn-el-c" onclick="clearDisplay()">C</button>
+      <button class="btn-el" onclick="appendToDisplay('')">&larr;</button>
+      <button class="btn-el" id="f-btn" onclick="appendToDisplay('/')">&#247;</button>
     </div>
 
     <div class="btn_row">
-      <button class="btn-el" onclick="onClick()">7</button>
-      <button class="btn-el" onclick="onClick()">8</button>
-      <button class="btn-el" onclick="onClick()">9</button>
-      <button class="btn-el" id="f-btn" onclick="onClick()">&times;</button>
+      <button class="btn-el" onclick="appendToDisplay('7')">7</button>
+      <button class="btn-el" onclick="appendToDisplay('8')">8</button>
+      <button class="btn-el" onclick="appendToDisplay('9')">9</button>
+      <button class="btn-el" id="f-btn" onclick="appendToDisplay('*')">&times;</button>
     </div>
 
     <div class="btn_row">
-      <button class="btn-el" onclick="onClick()">4</button>
-      <button class="btn-el" onclick="onClick()">5</button>
-      <button class="btn-el" onclick="onClick()">6</button>
-      <button class="btn-el" id="f-btn" onclick="onClick()">&minus;</button>
+      <button class="btn-el" onclick="appendToDisplay('4')">4</button>
+      <button class="btn-el" onclick="appendToDisplay('5')">5</button>
+      <button class="btn-el" onclick="appendToDisplay('6')">6</button>
+      <button class="btn-el" id="f-btn" onclick="appendToDisplay('-')">&minus;</button>
     </div>
 
     <div class="btn_row">
-      <button class="btn-el" onclick="onClick()">1</button>
-      <button class="btn-el" onclick="onClick()">2</button>
-      <button class="btn-el" onclick="onClick()">3</button>
-      <button class="btn-el" id="f-btn" onclick="onClick()">+</button>
+      <button class="btn-el" onclick="appendToDisplay('1')">1</button>
+      <button class="btn-el" onclick="appendToDisplay('2')">2</button>
+      <button class="btn-el" onclick="appendToDisplay('3')">3</button>
+      <button class="btn-el" id="f-btn" onclick="appendToDisplay('+')">+</button>
     </div>
 
     <div class="btn_row">
-      <button class="btn-el" id="btn-el-c" onclick="onClick()">0</button>
-      <button class="btn-el" id="f-btn-eq" onclick="onClick()">=</button>
+      <button class="btn-el" id="btn-el-c" onclick="appendToDisplay('0')">0</button>
+      <button class="btn-el" id="f-btn-eq" onclick="calculate()">=</button>
     </div>
   </div>
   
